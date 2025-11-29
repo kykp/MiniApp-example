@@ -1,11 +1,13 @@
 :root {
+    /* 🖋️ Шрифты и базовые размеры */
     --font-base: 'Product Sans';
+    --font-size: 14px;
 
-    --page-max-width: 400px; /* максимальная ширина контента */
-    --page-padding: 16px;    /* отступы по краям */
+    /* 🌐 Контейнер страницы */
+    --page-max-width: 400px;   /* максимальная ширина контента */
+    --page-padding: 16px;      /* отступы по бокам */
 
-
-    /* 🎨 Базовые цвета */
+    /* 🎨 Основные цвета */
     --color-white: #fff;
     --color-black: #111417;
     --color-gray-light: #8794a1;
@@ -14,100 +16,45 @@
 
     --color-accent: #4cb2ff;
     --color-accent-strong: #248bda;
-
     --color-danger: #ff5863;
     --color-warning: #ff9953;
 
     /* 🌈 Фоны */
-    --bg-rgb: 26, 32, 38;
-    --bg-color: rgb(var(--bg-rgb));
+    --bg-color: rgb(26, 32, 38);
     --bg-hover-color: var(--color-gray-dark);
-
-    --header-bg-rgb: 33, 42, 51;
-    --header-bg-color: rgba(var(--header-bg-rgb), .9);
-
+    --header-bg-color: rgba(33, 42, 51, 0.9);
     --footer-bg-color: var(--color-black);
 
-    /* 🖋️ Тексты */
-    --font-size: 14px;
-    --text-color: var(--color-gray-light);
-    --secondary-text-color: var(--color-gray-medium);
-    --value-color: var(--color-white);
-
-    /* 📦 Dropdown */
-    --dropdown-color: #dde4eb;
-    --dropdown-bg-color: #2e3a47;
-    --dropdown-bg-hover-color: #384553;
-    --dropdown-secondary-color: var(--color-gray-medium);
-
-    /* 📝 Поля */
-    --field-bg-color: var(--color-gray-dark);
-    --field-second-color: #8494a3;
-    --field-placeholder-color: #8a98a6;
-    --field-accent-color: var(--color-accent-strong);
-
     /* 🔘 Кнопки */
+    /* Primary */
     --btn-primary-color: var(--color-white);
-    --btn-primary-bg-rgb: 36, 139, 218;
-    --btn-primary-bg-color: rgb(var(--btn-primary-bg-rgb));
+    --btn-primary-bg-color: rgb(36, 139, 218);
     --btn-primary-bg-hover-color: #207cc2;
     --btn-primary-disabled-color: #a6d8ff;
 
-    /* красная кнопка */
-    --btn-danger-color: var(--color-white);
-    --btn-danger-bg-rgb: 255, 88, 99; /* основной цвет */
-    --btn-danger-bg-color: rgb(var(--btn-danger-bg-rgb));
-    --btn-danger-bg-hover-color: rgb(220, 70, 90);
-
+    /* Default */
     --btn-default-color: var(--color-white);
     --btn-default-bg-color: var(--color-gray-dark);
     --btn-default-bg-hover-color: #293440;
 
+    /* Danger (красная кнопка с hover эффектом как у primary) */
+    --btn-danger-color: var(--color-white);
+    --btn-danger-bg-color: rgb(255, 88, 99);
+    --btn-danger-bg-hover-color: rgb(220, 70, 90);
+
+    /* Header button (если понадобится) */
     --btn-header-color: var(--color-white);
-    --btn-header-bg-rgb: 41, 52, 64;
-    --btn-header-bg-color: rgb(var(--btn-header-bg-rgb));
-    --btn-header-bg-hover-rgb: 63, 78, 96;
-    --btn-header-bg-hover-color: rgb(var(--btn-header-bg-hover-rgb));
+    --btn-header-bg-color: rgb(41, 52, 64);
+    --btn-header-bg-hover-color: rgb(63, 78, 96);
 
-    /* 📊 Таблицы */
-    --table-bg-rgb: 33, 42, 51;
-    --table-bg-color: rgb(var(--table-bg-rgb));
-    --table-header-bg-color: #293440;
-    --table-bg-hover-color: #293440;
-    --table-text-color: var(--color-gray-medium);
-
-    /* ⚙️ Настройки */
-    --settings-bg-rgb: var(--header-bg-rgb);
-    --settings-bg-color: rgb(var(--settings-bg-rgb));
-    --settings-bg-hover-color: #293440;
-
-    /* 🟢 Статусы */
-    --inactive-bg-color: var(--color-gray-dark);
-    --inactive-color: #354352;
-
-    --unavail-color: var(--color-danger);
-    --danger-bg-color: rgba(var(--color-danger), .14);
-    --danger-text-color: var(--color-danger);
-
-    --warning-bg-color: rgba(var(--color-warning), .14);
-    --warning-text-color: var(--color-warning);
-
-    /* 🛠️ Прочее */
-    --header-height: 32px;
+    /* ⚙️ Стили UI элементов */
     --def-border-radius: 8px;
-    --min-border-radius: 3px;
     --popup-border-radius: 12px;
-
-    --def-transition-duration: .2s;
+    --def-transition-duration: 0.2s;
     --def-transition: var(--def-transition-duration) ease;
-    --first-half-transition: .1s ease-out;
-    --second-half-transition: .1s ease-in .1s;
-    --half-transition-duration: .15s;
 
-    --footer-color: #6d8394;
-    --tooltip-bg-color: #2d3c4c;
-    --tooltip-color: var(--color-white);
-
-    --header-tab-color-rgb: 203, 215, 229;
-    --header-tab-color-active: var(--color-white);
+    /* Тексты */
+    --text-color: var(--color-gray-light);
+    --secondary-text-color: var(--color-gray-medium);
+    --value-color: var(--color-white);
 }
