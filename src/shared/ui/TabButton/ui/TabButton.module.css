@@ -1,0 +1,68 @@
+.tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 6px;
+    color: var(--text-color);
+    text-decoration: none;
+    gap: 4px;
+
+    /* touch target */
+    min-height: 48px;
+    box-sizing: border-box;
+
+    transition: color var(--def-transition-duration) ease,
+    background-color var(--def-transition-duration) ease;
+    border-radius: 8px;
+}
+
+/* icon wrapper */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SVG sizing */
+.icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* label */
+.label {
+    font-size: 12px;
+    line-height: 1;
+    color: inherit;
+}
+
+/* active state */
+.active {
+    color: var(--color-accent);
+}
+
+/* hover / focus */
+.tab:hover,
+.tab:focus {
+    color: var(--color-accent);
+    outline: none;
+}
+
+/* make sure link doesn't shrink too small on very narrow screens */
+.tab {
+    min-width: 56px;
+}
+
+/* optional: when nav has background, increase contrast for active with small bg */
+.active::after {
+    content: "";
+    display: block;
+    margin-top: 6px;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-accent);
+}

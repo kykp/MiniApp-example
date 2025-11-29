@@ -1,0 +1,16 @@
+.header {
+    padding: var(--page-padding);
+    max-width: var(--page-max-width);
+    background-color: var(--header-bg-color);
+    border-bottom-left-radius: var(--popup-border-radius);
+    border-bottom-right-radius: var(--popup-border-radius);
+    display: flex;
+    height: 56px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

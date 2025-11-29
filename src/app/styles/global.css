@@ -1,0 +1,26 @@
+html, body, #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--font-base), -apple-system, system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-size: var(--font-size);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--value-color);
+}
