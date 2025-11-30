@@ -1,8 +1,9 @@
-import {Route, Routes} from "react-router-dom";
 import {AppInit} from "./AppInit.tsx";
-import {Header, PageContent, PageWrapper} from "@/shared/ui";
-import {HomePage, ProfilePage} from "@/pages";
 import {BottomNavigation} from "@/widgets";
+import {PageWrapper} from "@/shared/ui/PageWrapper";
+import {Header} from "@/shared/ui/Header";
+import {PageContent} from "@/shared/ui/PageContent";
+import {AppRouter} from "@/app/providers/router/ui/AppRouter.tsx";
 
 function App() {
     return (
@@ -10,10 +11,7 @@ function App() {
             <AppInit/>
             <Header/>
             <PageContent>
-                <Routes>
-                    <Route path="/" element={<HomePage/>}/>
-                    <Route path="/profile" element={<ProfilePage/>}/>
-                </Routes>
+                <AppRouter/>
             </PageContent>
             <BottomNavigation/>
         </PageWrapper>

@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
-import {Button} from "@/shared/ui";
 import {ROUTES} from "@/shared/config";
+import {Button} from "@/shared/ui/Button/Button.tsx";
 import styles from './HomePage.module.css';
 
 export const HomePage = () => {
