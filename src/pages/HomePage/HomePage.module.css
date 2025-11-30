@@ -3,8 +3,34 @@
     flex-direction: column;
 }
 
-.buttons {
+.card {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    border-radius: var(--def-border-radius);
+    background-color: var(--header-bg-color);
+    margin-top: 50px;
+    padding: var(--page-padding);
+}
+
+.header {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.create_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
 }
