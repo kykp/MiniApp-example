@@ -1,0 +1,24 @@
+.chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--header-bg-color);
+    color: var(--color-white);
+    padding: 6px 12px; /* удобно для клика пальцем */
+    border-radius: var(--def-border-radius);
+    font-size: 14px;
+    user-select: none;
+}
+
+.chipDelete {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: var(--def-border-radius);
+    background-color: rgba(0,0,0,0.2);
+    transition: var(--def-transition);
+}
+
+.chipDelete:hover {
+    background-color: rgba(0,0,0,0.35);
+}

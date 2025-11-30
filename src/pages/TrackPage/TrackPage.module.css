@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding: var(--page-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--value-color);
+}
+
+.multiSelectWrapper {
+    width: 100%;
+    max-width: var(--page-max-width);
+}
+
+.keywordsWrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 0;
+}
+
+.buttonWrapper {
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+}
