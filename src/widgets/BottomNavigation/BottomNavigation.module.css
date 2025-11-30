@@ -2,7 +2,7 @@
     width: 100%;
     max-width: var(--page-max-width);
     position: fixed;
-    bottom: 0;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     height: 56px;
@@ -10,8 +10,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top-left-radius: var(--popup-border-radius);
-    border-top-right-radius: var(--popup-border-radius);
+    border-radius: var(--popup-border-radius);
     box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
     z-index: 1000;
 }
